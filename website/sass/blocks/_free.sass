@@ -1,0 +1,101 @@
+@media (min-width: 992px)
+  .free-button
+    &__call
+      outline: none
+      transition: .3s
+      &:hover
+        cursor: pointer
+        background-color: darken($pink, 20%)
+    &__reception
+      outline: none
+      transition: .3s
+      &:hover
+        cursor: pointer
+        background-color: darken($purple, 20%)    
+.free
+  &-container
+    height: 136px
+    padding-top: 56px
+    display: flex
+    justify-content: space-between
+  &-block
+    &__title
+      font-size: 41px
+      line-height: 46px
+      color: $text-color
+      margin-bottom: 18px
+      +bold
+    &__subtitle
+      font-size: 14px
+      line-height: 28px   
+      color: $text-color
+      +bold
+  &-button
+    margin-top: 16px
+    &__call 
+      outline: none
+      width: 206px
+      height: 49px
+      border-radius: 25px
+      background-color: $pink
+      border: none
+      font-size: 14px
+      line-height: 31px
+      text-transform: uppercase   
+      color: $white
+      margin-right: 23px
+      +bold 
+    &__reception
+      outline: none
+      width: 206px
+      height: 49px
+      border-radius: 25px
+      background-color: $purple
+      border: none
+      font-size: 14px
+      line-height: 31px
+      text-transform: uppercase  
+      color: $white
+      +bold
+@media (max-width: 1240px)
+  .free-container
+    padding-top: 38px
+    padding-bottom: 38px
+    padding-left: 30px
+  .free-button__reception
+    margin-top: 14px
+  .free-button
+    width: 230px
+@media (max-width: 992px)    
+  .free
+    height: 240px
+    &-block
+      &__subtitle
+        width: 340px
+      &__title
+        font-size: 32px
+@media (max-width: 768px)            
+  .free
+    &-block
+      &__subtitle
+        width: 100%
+    &-button
+      width: 100%
+      flex-direction: row
+    &-container
+      flex-direction: column
+@media (max-width: 645px)       
+  .free
+    height: 300px
+@media (max-width: 520px)    
+  .free
+    height: 360px
+    &-button
+      display: flex
+      flex-direction: column
+@media (max-width: 400px)  
+  .free
+    height: 400px
+    &-block
+      &__title
+        font-size: 26px

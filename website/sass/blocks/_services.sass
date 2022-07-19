@@ -1,0 +1,206 @@
+@media (min-width: 992px)
+  .services-list__item
+    cursor: pointer 
+  .services-block__card:hover
+    background-color: $pink
+    .services-block__title
+      color: $white
+    .services-block__info
+      color: $white
+    .services-block__price
+      color: $white
+    .services-block__price__number
+      color: $white      
+.services
+  &__active
+    color: $white
+    cursor: pointer
+    height: 40px
+    border: none
+    border-radius: 20px
+    background-color: $pink  
+.services
+  background-color: $header-bg-grey
+  width: 100%
+  height: 862px
+  &__title
+    font-size: 41px
+    font-weight: 700
+    line-height: 46px
+    color: $text-color
+    &:after
+      content: ""
+      margin-top: 18px
+      display: block
+      content: ""
+      height: 3px
+      width: 92px
+      background-color: #ebebeb
+      transition: width .3s ease-in-out
+      margin-bottom: 52px
+  &-container
+    padding-top: 74px
+  &-block
+    display: flex
+    justify-content: space-between
+    &__title
+      margin-left: 2px
+      font-size: 22px
+      line-height: 28px 
+      color: $pink
+      margin-top: 34px
+      margin-bottom: 13px
+      +bold
+    &__info
+      font-size: 15px
+      font-weight: 400
+      line-height: 24px  
+      color: $question__info
+      &:after
+        margin: auto
+        content: ""
+        margin-top: 18px
+        display: block
+        content: ""
+        height: 3px
+        width: 53px
+        background-color: #ebebeb
+        transition: width .3s ease-in-out
+        margin-bottom: 14px
+    &__price
+      font-size: 14px
+      font-weight: 400  
+      line-height: 28px
+      margin-bottom: 0
+      color: #0a0a0a
+      &__number
+        position: relative
+        bottom: 6px
+        margin-top: 0
+        font-size: 24px
+        line-height: 27px
+        color: $pink
+        +bold
+    &__card
+      width: 276px
+      height: 529px
+      box-shadow: 2px 2px 9px rgba(0, 0, 0, 0.05)
+      background-color: $white
+      text-align: center
+      transition: .3s
+      &:first-child
+        margin-right: 2px
+      &:nth-child(2)
+        margin-right: 2px  
+      &:nth-child(3)
+        margin-top: 2px
+  &-navbar
+    display: flex    
+    justify-content: space-between
+  &-list
+    margin-top: 4px
+    display: flex  
+    &__item
+      height: 40px
+      font-size: 14px
+      line-height: 24px
+      text-transform: uppercase
+      transition: .3s
+      display: flex
+      justify-content: center
+      align-items: center
+      padding-left: 23px
+      padding-right: 23px
+      +bold
+      &:last-child
+        padding-right: 23px
+@media (max-width: 1240px)
+  .services-block
+    width: 100%
+    margin: auto
+    &__title
+      font-size: 18px
+    &__info
+      font-size: 13px  
+    &__price
+      font-size: 12px  
+      &__number
+        font-size: 22px  
+  .services-block__card
+    width: 220px
+    height: 460px
+    &:first-child
+      margin-right: 0
+    &:nth-child(2)
+      margin-right: 0 
+    &:nth-child(3)
+      margin-top: 0  
+    &__image
+      width: 220px
+
+@media (max-width: 992px)
+  .services
+    height: 1260px
+@media (max-width: 992px)
+  .services
+    &-block
+      flex-wrap: wrap
+      justify-content: space-around 
+      &__card
+        &:last-child
+          margin-top: 50px
+@media (max-width: 840px)  
+  .services
+    &__title
+      &:after
+        margin-bottom: 20px
+    &-navbar
+      flex-direction: column    
+    &-list
+      margin-bottom: 30px
+      &__item  
+@media (max-width: 750px)    
+  .services
+    &-block
+      &__card
+        &:nth-child(3)
+          margin-top: 50px  
+@media (max-width: 568px)
+  .services
+    &-list
+      &__item
+        font-size: 12px
+        padding-left: 10px
+        padding-right: 10px                
+@media (max-width: 505px)
+  .services
+    height: 2300px
+    &-block
+      &__card
+        &:nth-child(2)
+          margin-top: 50px
+          
+@media (max-width: 505px)  
+  .services
+    height: 2560px
+    &-block
+      &__price
+        font-size: 14px
+        &__number
+          font-size: 24px
+      &__info
+        font-size: 14px
+      &__title
+        font-size: 21px
+      &__card
+        width: 260px
+        height: 510px
+        &__image
+          width: 260px
+    &-list
+      flex-direction: column
+      &__item
+        &:first-child
+          padding-left: 10px
+        &:last-child
+          padding-right: 10px

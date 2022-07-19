@@ -1,0 +1,22 @@
+.button {
+  margin-top: 20px;
+  text-align: center;
+}
+.thanks__button {
+  border: none;
+  font-size: 18px;
+  border-radius: 20px;
+  padding: 10px 23px 10px 23px;
+  font-family: sans-serif;
+  font-weight: 600;
+  background-color: #c3759e;
+  color: #ffffff;
+  outline: none;
+  transition: .3s;
+}
+.thanks__button:hover {
+  background-color: #7c4c65;
+}
+.text-center {
+  font-size: 30px;
+}

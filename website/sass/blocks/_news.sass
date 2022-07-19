@@ -1,0 +1,334 @@
+@media (min-width: 992px)
+  .notice-block__image
+    &:hover
+      filter: invert(0.8)
+  .notice-block__video__slider
+    &:hover
+      cursor: pointer
+    &:after
+      margin-top: 12px
+      display: block
+      content: ""
+      height: 2px
+      width: 100%
+      background-color: $white
+      transition: width .3s ease-in-out
+      visibility: hidden
+      -webkit-transform: scaleX(0)
+      transform: scaleX(0)
+      -webkit-transition: all 0.3s ease-in-out 0s
+      transition: all 0.3s ease-in-out 0s
+      left: 50%
+    &:hover
+      cursor: pointer
+      color: $link-color  
+    &:hover:after
+      visibility: visible
+      -webkit-transform: scaleX(1)
+      transform: scaleX(1)  
+  .notice-block__video
+    transition: .3s
+    &:hover
+      background-color: $pink
+      .notice-block__video__title
+        color: $white
+      .notice-block__video__slider
+        color: $white  
+  .news-cards__card
+    transition: .3s
+    &:hover
+      .news-cards__title
+        color: $white
+      .news-cards__info
+        color: $white
+      .news-cards__button
+        color: $white
+        &:after
+          background-color: $white    
+      background-color: $pink
+  .news-cards__buton
+    &:hover
+      cursor: pointer
+.news
+  background-color: #f7f7f7
+  width: 100%
+  height: 720px
+  padding-top: 98px
+  &-cards
+    display: flex
+    width: 586px
+    justify-content: space-between
+    &__image
+    &__info
+      font-size: 14px
+      font-weight: 400
+      line-height: 24px
+      margin-left: 2px
+      color: $grey
+      width: 180px
+      margin-bottom: 24px
+    &__title
+      margin-left: 2px
+      margin-top: 25px
+      margin-bottom: 18px
+      font-size: 22px
+      line-height: 28px
+      color: $text-color
+      +bold
+    &__token
+      position: relative
+      bottom: 24px
+      left: 22px
+      z-index: 1
+    &__card
+      margin-top: 56px
+      width: 280px
+      height: 486px  
+      background-color: #ffffff
+      &__wrap
+        position: relative
+        bottom: 48px
+        width: 221px
+        margin: auto
+  &-box
+    display: flex
+  &-block
+    flex-basis: 50%
+    &__title
+      font-size: 41px
+      font-weight: 700
+      line-height: 46px
+      color: $text-color
+      &:after
+        content: ""
+        margin-top: 32px
+        display: block
+        content: ""
+        height: 3px
+        width: 92px
+        background-color: #ebebeb
+        transition: width .3s ease-in-out
+.notice
+  &__video
+    width: 528px
+    height: 328px
+    margin-left: 28px
+    outline: none
+  &-block
+    margin-left: 24px
+    flex-basis: 50%
+    &__image
+      transition: .3s
+    &__video
+      &__info
+        text-align: center
+        position: relative
+        bottom: 24px
+        margin-right: 10px
+      &__title
+        margin-bottom: 22px
+        font-size: 22px
+        line-height: 28px
+        color: $text-color
+        +bold
+      &__slider
+        display: inline-block
+        font-size: 14px
+        line-height: 24px
+        text-transform: uppercase 
+        color: $grey
+        +bold
+    &__icon
+      margin-right: 13px
+      &:last-child
+        margin-right: 0
+    &__links
+      padding-top: 2px
+      padding-right: 2px
+      right: 4px
+      margin: auto
+      display: flex
+      flex-direction: row
+      justify-content: center
+      align-items: center
+      z-index: 1
+      position: relative
+      width: 195px
+      height: 47px
+      border-radius: 24px
+      background-color: #ffffff
+      bottom: 26px
+    &__video
+      display: block
+      padding-top: 29px
+      width: 587px
+      height: 458px
+      background-color: $white
+    &__title
+      font-size: 41px
+      font-weight: 700
+      line-height: 46px
+      color: $text-color
+      &:after
+        content: ""
+        margin-top: 32px
+        display: block
+        content: ""
+        height: 3px
+        width: 92px
+        background-color: #ebebeb
+        transition: width .3s ease-in-out
+        margin-bottom: 56px  
+.iframe
+  width: 528px
+  height: 328px         
+@media (max-width: 1280px)
+  .notice
+    &__video
+      width: 400px
+    &-block
+      flex-basis: 30%
+      width: 400px
+  .news
+    &-cards
+      width: 100%
+    &-block
+      width: 400px
+    &-cards
+      &__card
+        width: 250px
+        height: 456px
+  .iframe
+    width: 428px
+    height: 280px    
+  .notice
+    &-block
+      &__links
+        bottom: 68px
+      &__video
+        width: 487px
+        height: 400px  
+        &__title
+          margin-bottom: 16px
+        &__info
+          bottom: 60px      
+@media (max-width: 1180px)  
+  .news
+    &-block
+      flex-basis: 60%
+    &-cards
+      justify-content: flex-start
+      &__button
+        margin-left: 10px
+      &__info
+        margin-left: 10px
+      &__title
+        font-size: 20px
+        margin-left: 10px
+      &__card
+        margin-right: 40px
+        height: 440px
+        width: 231px
+        &:last-child
+          margin-right: 0
+        &__wrap
+          width: 260px
+          bottom: 68px
+  .iframe
+    width: 340px
+    height: 220px
+  .notice
+    &__video
+      margin-left: 10px
+      width: 340px
+    &-block
+      &__links
+        bottom: 130px
+      &__video
+        padding-top: 10px
+        width: 360px   
+        height: 350px
+        &__info
+          bottom: 120px     
+@media (max-width: 992px)  
+  .iframe
+    width: 528px
+    height: 328px
+  .notice
+    &__video
+      margin-top: 22px
+      margin-left: 28px
+      width: 587px
+      height: 458px
+    &-block
+      margin-left: 0
+      margin-top: 60px
+      width: 100% 
+      &__links
+        bottom: 150px
+      &__video
+        margin: auto
+        width: 587px
+        height: 500px
+        &__info
+          bottom: 140px
+  .news
+    height: 1400px
+    &-block
+      width: 100%
+    &-box
+      flex-direction: column   
+    &-cards
+      margin: auto
+      width: 587px
+      &__title
+        font-size: 24px
+        margin-left: 0
+      &__info
+        margin-left: 0
+      &__button
+        margin-left: 0    
+      &__card
+        width: 280px
+        height: 486px     
+        &__wrap
+          width: 221px
+          margin: auto
+          margin-top: 20px 
+@media (max-width: 700px) 
+  .iframe
+    width: 260px  
+    height: 170px
+  .notice
+    &__video
+      margin-top: 0
+      margin-left: 10px
+      width: 260px
+    &-block
+      &__links
+        width: 120px
+        bottom: 300px
+      &__video
+        height: 320px
+        width: 280px   
+        &__slider
+          font-size: 13px
+        &__title
+          font-size: 19px
+        &__info
+          bottom: 290px
+  .news
+    height: 1200px 
+@media (max-width: 650px)  
+  .notice
+    &-block
+      margin-left: 0
+  .news
+    height: 1760px
+    &-cards
+      margin: auto
+      width: 280px
+      flex-direction: column   
+    &-block
+      &__title
+        font-size: 36px       

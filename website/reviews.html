@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Миролюбец-услуги</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <!-- Шрифт -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+  <!-- Yandex.Metrika counter -->
+  <script>
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym"); ym(55039831, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); 
+  </script> 
+</head>
+<body>
+    <noscript>
+      <img src="https://mc.yandex.ru/watch/55039831" style="position:absolute; left:-9999px;" alt="" />
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
+  <!-- header -->
+  <header class="header">
+    <div class="main-contacts">
+      <div class="container contacts-block">
+        <div class="contacts-block__info">
+          <div class="contacts-block__phone">
+            <img src="img/header/phone-icon.png" alt="Иконка телефона" class="contacts-phone__icon">
+            <a href="tel:8(950)321-65-55    " class="contacts-phone__number">8 (950) 321-65-55</a>
+          </div>
+          <div class="contacts-block__address">
+            <img src="img/header/mark-icon.png" alt="Иконка метки" class="contacts-address__icon">
+            <span class="contacts-address">Ул. Мира 6, дом 1, офис 4.</span>
+          </div>
+        </div>
+        <div class="contacts-block__enter">
+          <div class="contacts-block__login">Логин <img class="contacts-block__enter__stick" src="img/header/stick.svg" alt=""> Регистрация</div>
+        </div>
+      </div>
+    </div>
+    <!-- /. main-contacts -->
+    <div class="container navbar">
+      <div class="header-logo">
+        <div class="header-logo__image">
+          <a href="index.html"><img src="img/header/logo.jpg" alt="Логотип"></a>
+        </div>
+        <div class="header-logo-text">
+          <div class="header-logo__title">Миролюбец</div>
+          <div class="header-logo__subtitle">закроем ваши крылья</div>
+        </div>
+      </div>
+      <!-- /. header-logo -->
+
+      <div class="header-navbar">
+        <!-- burger menu for mobile -->
+        <div class="overlay">
+            <nav class="overlayMenu">  
+                <ul role="menu">
+                    <li><a href="index.html" role="menuitem">Главная</a></li>
+                    <li><a href="index.html#company" class="scrollto" role="menuitem">О компании</a></li>
+                    <li><a href="news.html" role="menuitem">Новости</a></li>
+                    <li><a href="services.html" role="menuitem">Услуги</a></li>
+                    <li><a href="reviews.html" role="menuitem">Отзывы</a></li>
+                    <li><a href="#" role="menuitem" class="contacts">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <div class="navBurger" role="navigation" id="navToggle"></div> 
+        <!-- /. burger menu for mobile --> 
+        
+        <ul class="header-navbar__list">
+          <li class="header-navbar__item"><a class="header-navbar__item__link" href="index.html">Главная</a></li>
+          <li class="header-navbar__item"><a class="header-navbar__item__link scrollto" href="index.html#company">О компании</a></li>
+          <li class="header-navbar__item"><a class="header-navbar__item__link" href="news.html">Новости</a></li>
+          <li class="header-navbar__item"><a class="header-navbar__item__link" href="services.html">Услуги</a></li>
+          <li class="header-navbar__item"><a class="header-navbar__item__link" href="reviews.html">Отзывы</a></li>
+          <li class="header-navbar__item"><a class="header-navbar__item__link contacts" href="#">Контакты</a></li>
+        </ul>
+        <div class="header-navbar__phone">
+          <img class="header-navbar__phone__image" src="img/header/havbar__phone.png" alt="Телефон" id="phone" onclick="ym(55039831, 'reachGoal', 'button'); return true;">
+        </div>
+      </div>
+
+    </div>
+  </header>
+  <!-- /. header -->
+
+  <div class="reviews">
+    <div class="container reviews-container">
+      <div class="reviews__title">Отзывы наших клиентов</div>
+        <div class="reviews-block">
+          <div class="reviews-block__card wow fadeInUp" data-wow-delay="0.2s">
+            <div class="reviews-block__card__wrap">
+              <!-- STARS -->        
+              <fieldset class="rating">
+                  <input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
+                  <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+                  <input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+                  <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+                  <input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
+                  <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+                  <input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+                  <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+                  <input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+                  <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+              </fieldset>                   
+              <!-- /. STARS -->
+              <div class="reviews-block__info">С другой стороны консультация с широким активом в значительной степени обуславливает создание направлений прогрессивного развития. Значимость</div>
+              <!-- /.reviews-block__info -->
+              <div class="reviews-block__square"></div>
+              <!-- /.reviews-block__square -->
+            </div>
+            <!-- /.reviews-block__card__wrap -->
+            <div class="reviews-block__people">
+              <img src="img/reviews/people.png" alt="woomen_image" class="reviews-block__people__image">
+              <div class="reviews-block__people__info">
+                  <div class="reviews-block__people__name">Ольга Петрова</div>
+                  <div class="reviews-block__people__work">Web-дизайнер</div>
+              </div>
+            </div>
+          </div>
+          <!-- /.reviews-block__card -->
+          <div class="reviews-block__card wow fadeInUp" data-wow-delay="0.4s">
+            <div class="reviews-block__card__wrap">
+              <!-- STARS -->
+              <fieldset class="rating">
+                  <input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
+                  <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+                  <input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+                  <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+                  <input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
+                  <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+                  <input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+                  <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+                  <input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+                  <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+              </fieldset>
+              <!-- /. STARS -->
+              <div class="reviews-block__info">С другой стороны консультация с широким активом в значительной степени обуславливает создание направлений прогрессивного развития. Значимость</div>
+              <!-- /.reviews-block__info -->
+              <div class="reviews-block__square"></div>
+              <!-- /.reviews-block__square -->
+            </div>
+            <!-- /.reviews-block__card__wrap -->
+            <div class="reviews-block__people">
+              <img src="img/reviews/people.png" alt="woomen_image" class="reviews-block__people__image">
+              <div class="reviews-block__people__info">
+                  <div class="reviews-block__people__name">Ольга Петрова</div>
+                  <div class="reviews-block__people__work">Web-дизайнер</div>
+              </div>
+            </div>
+          </div>
+          <!-- /.reviews-block__card -->
+          <div class="reviews-block__card wow fadeInUp" data-wow-delay="0.6s">
+            <div class="reviews-block__card__wrap">
+              <!-- STARS -->
+              <fieldset class="rating">
+                  <input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
+                  <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+                  <input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+                  <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+                  <input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
+                  <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+                  <input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+                  <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+                  <input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+                  <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+              </fieldset>
+              <!-- /. STARS -->
+              <div class="reviews-block__info">С другой стороны консультация с широким активом в значительной степени обуславливает создание направлений прогрессивного развития. Значимость</div>
+              <!-- /.reviews-block__info -->
+              <div class="reviews-block__square"></div>
+              <!-- /.reviews-block__square -->
+            </div>
+            <!-- /.reviews-block__card__wrap -->
+            <div class="reviews-block__people">
+              <img src="img/reviews/people.png" alt="woomen_image" class="reviews-block__people__image">
+              <div class="reviews-block__people__info">
+                  <div class="reviews-block__people__name">Ольга Петрова</div>
+                  <div class="reviews-block__people__work">Web-дизайнер</div>
+              </div>
+            </div>
+          </div>
+          <!-- /.reviews-block__card -->
+        </div>
+    </div>
+  </div>
+
+  
+  <div class="free">
+    <div class="container free-container reviews-page__free__container">
+      <div class="free-block">
+        <div class="free-block__title">Получите бесплатную консультацию!</div>
+        <div class="free-block__subtitle">Отправте заявку и наши сотрудники свяжутся с Вами прямо сейчас</div>
+      </div>
+      <!-- /. free-block -->
+      <div class="free-button">
+        <button class="free-button__call" id="button__call" onclick="ym(55039831, 'reachGoal', 'button'); return true;">заказать звонок</button>
+        <button class="free-button__reception" id="button__reception" onclick="ym(55039831, 'reachGoal', 'button'); return true;">записаться на прием</button>
+      </div>
+      <!-- /. free-button -->
+    </div>
+  </div>
+  <!-- /. free -->
+
+  <footer class="footer">
+      <div class="container footer-container">
+        <div class="footer-block">
+          <div class="footer-block__main">
+            <div class="footer-main">
+              <div class="footer-main__logo">
+                <img src="img/footer/footer-logo.png" alt="Логотип" class="footer-logo">
+              </div>
+              <div class="footer-main__titles">
+                <div class="footer-main__title">Миролюбец</div>
+                <div class="footer-main__subtitle">закроем ваши крылья</div>
+              </div>
+            </div>
+            <!-- /.footer-block__title -->
+            <div class="footer-main__info">С другой стороны консультация с широким активом в значительной степени обуславливает создание</div>
+            <!-- /.footer-block__info -->
+            <div class="footer-icons">
+              <a href="https://vk.com/glo_academy" target="_blank" class="notice-block__icon"><img src="img/footer/vk.png" class="notice-block__image" alt="Vkontake"></a>
+              <a href="#" class="notice-block__icon"><img src="img/footer/facebook.png" class="notice-block__image" alt="Facebook"></a>
+              <a href="https://www.youtube.com/channel/UCVswRUcKC-M35RzgPRv8qUg" target="_blank" class="notice-block__icon"><img src="img/footer/inst.png" class="notice-block__image" alt="Instagram"></a>
+            </div>
+          </div>
+          <!-- /.footer-block__item -->
+          <div class="footer-block__item footer-about__company">
+            <div class="footer-block__title">О компании</div>
+            <!-- /.footer-block__title -->
+            <div class="footer-block__info">
+              <div class="footer-block__info__item"><a href="news.html" class="footer__contacts">Новости</a></div>
+            <div class="footer-block__info__item"><a href="news.html#news" class="footer__contacts">Анонсы</a></div>
+              <div class="footer-block__info__item"><a href="#" class="footer__contacts" id="footer__contacts">Контакты</a></div>
+            </div>
+            <!-- /.footer-block__info -->
+          </div>
+          <!-- /.footer-block__item -->
+          <div class="footer-block__item">
+            <div class="footer-block__title footer-our__services">Наши услуги</div>
+            <!-- /.footer-block__title -->
+            <div class="footer-block__info">
+                <a class="footer-block__info__item footer__contacts footer__contacts1 scrollto" href="index.html#services">Психология</a>
+                <a class="footer-block__info__item footer__contacts footer__contacts2 scrollto" href="index.html#services">Психоаналитика</a>
+                <a class="footer-block__info__item footer__contacts footer__contacts3 scrollto" href="index.html#services">Услуги медиатора</a>
+            </div>
+            <!-- /.footer-block__info -->
+          </div>
+          <!-- /.footer-block__item -->
+          <div class="footer-block__item footer-without__title">
+            <div class="footer-block__title"></div>
+            <!-- /.footer-block__title -->
+            <div class="footer-block__info footer-block__last-info">
+                <a class="footer-block__info__item footer__contacts footer__contacts1 scrollto" href="index.html#services">Психология</a>
+                <a class="footer-block__info__item footer__contacts footer__contacts2 scrollto" href="index.html#services">Психоаналитика</a>
+                <a class="footer-block__info__item footer__contacts footer__contacts3 scrollto" href="index.html#services">Услуги медиатора</a>
+            </div>
+            <!-- /.footer-block__info -->
+          </div>
+          <!-- /.footer-block__item -->
+        </div>
+        <!-- /.footer-block -->
+        <div class="footer-line"></div>
+  
+        <div class="footer-message">
+          <div class="footer-message__copyright">Создание и продвижение сайта: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Glo Academy</div>
+        </div>
+      </div>
+    </footer>
+    <!-- /. footer -->
+
+  <!-- modal -->
+
+  <div class="modal" id="modal">  
+    <form action="mail.php" method="POST" id="box" class="box" onsubmit="ym(55039831, 'reachGoal', 'form'); return true;">
+      <button class="box__close" id="close">&times;</button>
+      <span class="box__title">Свяжитесь с нами</span> 
+      <span class="box__subtitle">Заполните поля ниже</span>
+      <input required type="text" class="input box__input" minlength="2" maxlength="15" name="user_name" id="username" placeholder="Ваше имя">
+      <input required type="tel" class="input box__input phone" name="user_phone" placeholder="Ваш телефон">
+      <input required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" type="email" class="input box__input" name="user_email" id="user_email" placeholder="Ваш email">
+      <button type="submit" class="button box__button" id="box__button">Узнать стоимость</button>
+      <span class="box__info">Или Вы можете перезвонить нам сами по телефону:</span>
+      <a href="tel:8-(950)-321-65-55" class="box__number">8 (950) 321-65-55</a>
+    </form>
+    <!-- /.box -->
+  </div>
+  <!-- /.modal -->
+
+  <!-- script -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/modal.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.js"></script>
+  <script src="js/current__link.js"></script>
+  <script src="js/slow__scroll.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/burger.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+</body>
+</html>

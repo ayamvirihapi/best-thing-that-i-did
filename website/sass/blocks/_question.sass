@@ -1,0 +1,69 @@
+.question
+  margin-bottom: 95px
+  &__title
+    font-size: 46px
+    font-weight: 700
+    line-height: 46px
+    color: $text-color
+    margin-top: 76px
+    &:after
+      content: ""
+      margin-top: 18px
+      display: block
+      content: ""
+      height: 3px
+      width: 92px
+      background-color: #ebebeb
+      transition: width .3s ease-in-out
+      margin-bottom: 24px
+  &-block
+    display: flex
+    justify-content: space-between
+    margin-top: 26px
+  &-card
+    text-align: center
+    &__image
+      margin-bottom: 13px
+    &__title
+      font-size: 25px
+      font-weight: 700
+      line-height: 28px
+      color: $text-color
+      margin-bottom: 36px
+    &__info
+      font-size: 15px
+      color: #939393  
+      width: 372px
+      margin-bottom: 26px
+      line-height: 24px
+      font-weight: 400
+@media (max-width: 1240px)    
+  .question
+    &-card
+      &__info
+        width: 300px
+@media (max-width: 992px)          
+  .question
+    &-block
+      justify-content: center
+      flex-wrap: wrap
+    &-card
+      &:first-child
+        margin-right: 50px
+      &:last-child
+        margin-top: 30px  
+@media (max-width: 739px)   
+  .question
+    &-block
+      justify-content: center
+      flex-wrap: wrap
+    &-card
+      margin-top: 40px
+      &:first-child
+        margin-right: 0
+      &:last-child
+        margin-top: 0  
+@media (max-width: 470px)   
+  .question
+    &__title
+      font-size: 36px    
